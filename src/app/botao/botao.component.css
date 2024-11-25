@@ -1,0 +1,16 @@
+.green-button {
+  width: 20%;
+  height: 50px;
+  background-color: green;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px; /* Cantos levemente arredondados */
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.green-button:hover {
+  background-color: #008000; /* Cor ligeiramente mais escura no hover */
+}
