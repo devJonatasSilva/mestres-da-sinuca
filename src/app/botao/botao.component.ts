@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import {RouterModule} from '@angular/router'
 
 @Component({
   selector: 'app-botao',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './botao.component.html',
-  styleUrl: './botao.component.css'
+  styleUrls: ['./botao.component.css']
 })
 export class BotaoComponent {
-
+  @Input() route!: string;
 }

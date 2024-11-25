@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import type { Routes } from '@angular/router';
 import { TelaloginComponent } from './telalogin/telalogin.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { TelaBoasVindasComponent } from './tela-boas-vindas/tela-boas-vindas.component';
@@ -6,7 +6,6 @@ import { TelaBoasVindasComponent } from './tela-boas-vindas/tela-boas-vindas.com
 
 export const routes: Routes = [
   { path: '', component: TelaBoasVindasComponent },
-  { path: 'login', component: TelaloginComponent }, // Rota para o TelaLogin
+  { path: 'login', component: TelaloginComponent },
   { path: 'home', component: HomePageComponent },
-  // { path: 'login', component: TelaloginComponent },
 ];
