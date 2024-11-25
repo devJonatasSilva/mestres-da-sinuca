@@ -1,0 +1,37 @@
+/* Define o layout principal do app */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante altura total da tela */
+  background-color: var(--background-color);
+}
+
+/* Cabeçalho fixo (opcional)
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: var(--space-medium);
+  text-align: center;
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+*/
+
+/* Estilo para o conteúdo principal */
+main {
+  flex: 1; /* Garante que o conteúdo ocupe o espaço restante */
+  padding: var(--space-large);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rodapé fixo (opcional)
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+  padding: var(--space-medium);
+  font-size: var(--font-size-small);
+}
+*/

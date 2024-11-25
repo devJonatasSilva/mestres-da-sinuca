@@ -1,5 +1,7 @@
 .green-button {
-  width: 20%;
+  max-width: 40%;
+
+  width: 30%;
   height: 50px;
   background-color: green;
   color: black;

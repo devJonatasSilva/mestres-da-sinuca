@@ -1,75 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variáveis globais */
 :root {
-  /* cores */
-  --cor-de-fundo-base: linear-gradient(45deg, #006400, #008000, #228B22, #32CD32);
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+
+  /*Espaçamentos */
+  --space-small: 8px;
+  --space-medium: 16px;
+  --space-large: 32px;
+
+  /* Tipografia */
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Sombra */
+  --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-body {
-  font-family: Arial, sans-serif;
+/* Remove margens e paddings padrão */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background: var(--cor-de-fundo-base); */
-  background: #ddd;
 }
 
-.container {
+/* Define altura e largura completas */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Corpo centralizado */
+body {
   display: flex;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Garante altura total da tela */
 }
 
-.btn {
-  display: inline-block;
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
+/* Estilo global para links */
+a {
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
+  color: inherit;
 }
 
-.btn:hover {
-  background-color: #45a049;
+a:hover {
+  text-decoration: underline;
 }
 
-.welcome-container, .login-container, .main-container, .ranking-container {
-  max-width: 600px;
-  /* width: 100%; */
-  margin: 10% auto;
-  padding: 20px;
+/* Estilo global para botões */
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  box-shadow: var(--box-shadow);
 }
 
-.welcome-container img {
-  width: 30%;
-  height: 30%;
-  margin-left: 33%;
+button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
+/* Contêiner principal */
+.container {
+  margin: var(--space-medium) auto;
+  padding: var(--space-large);
+  max-width: 1200px;
+}
 
+/* Classes utilitárias */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-h1, h2 {
-  color: #333;
+.text-center {
   text-align: center;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--space-medium);
+  }
 
-table, th, td {
-  border: 1px solid #ddd;
-}
-
-th, td {
-  padding: 12px;
-  text-align: center;
-}
-
-th {
-  background-color: #f2f2f2;
+  body {
+    font-size: var(--font-size-small);
+  }
 }
