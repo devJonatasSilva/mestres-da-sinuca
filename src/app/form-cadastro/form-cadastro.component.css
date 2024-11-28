@@ -1,0 +1,105 @@
+.cadastro-container {
+  max-width: 60vh;
+  max-height: 60vh;
+  display: grid;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin-top: 5%;
+  margin-left: 33%;
+  padding: 2vh;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.cadastro-container .logo {
+  width: 30vh;
+  justify-self: center;
+}
+
+.cadastro-container .botoes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cadastro-container form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.cadastro-container form input {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  /* margin-right: 10px; */
+}
+
+.cadastro-container .green-button {
+  margin-top: 30px;
+}
+
+.cadastro-container .label-cadastro {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/* .cadastro-container {
+  max-width: 100vh;
+  max-height: 60vh;
+  display: grid;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin-top: 30%;
+  padding: 2vh;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.cadastro-container .logo {
+  width: 30vh;
+  justify-self: center;
+}
+
+.cadastro-container .botoes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cadastro-container form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.cadastro-container form input {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+.cadastro-container .green-button {
+  margin-top: 30px;
+}
+
+.cadastro-container .label-cadastro {
+  margin-top: 10px;
+} */
