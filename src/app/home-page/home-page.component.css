@@ -1,17 +1,11 @@
 .home-container {
-  max-width: 100vh;
-  max-height: 100vh;
-  min-width: 100vh;
   min-height: 100vh;
   display: grid;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  /* height: 60vh; */
-  /* margin-top: 30%; */
   padding: 2vh;
   text-align: center;
-  border-radius: 10px;
   background-color: rgba(245, 245, 245, 0.8);
 }
 
