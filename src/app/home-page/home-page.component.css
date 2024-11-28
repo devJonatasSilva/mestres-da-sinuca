@@ -8,3 +8,8 @@
   text-align: center;
   background-color: rgba(245, 245, 245, 0.8);
 }
+
+.home-container p {
+  color: red;
+
+}
