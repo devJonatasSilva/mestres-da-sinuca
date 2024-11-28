@@ -1,22 +1,15 @@
 <div class="login-container">
   <h1>Login</h1>
 
-  <!-- Formulário de login -->
   <form id="login-form">
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
-
-      <label for="password">Senha:</label>
-      <input type="password" id="password" name="password" required placeholder="Digite sua senha">
-
+      <input type="text" id="usuario" name="email" required placeholder="Usuario">
+      <input type="password" id="password" name="password" required placeholder="Senha">
       <app-botao route="/home"> Entrar </app-botao>
-      <!-- <button type="submit" class="btn">Entrar</button> -->
   </form>
 
-  <!-- Link para a página de cadastro -->
-  <p>Não tem uma conta? <a href="/sinuca-app/statics/register.html">Cadastre-se</a></p>
-
-  <!-- Link para continuar como convidado
-  <p>Ou <a href="/sinuca-app/statics/main.html">continue como convidado</a></p> -->
+  <div class="label-cadastro">
+    <p>Ainda não é membro?</p>
+    <a href="/form-cadastro"><strong>Cadastre-se</strong></a>
+  </div>
 </div>
 
