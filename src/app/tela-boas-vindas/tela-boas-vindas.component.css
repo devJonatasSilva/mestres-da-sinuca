@@ -1,11 +1,11 @@
 .welcome-container {
-  max-width: 60vh;
-  max-height: 60vh;
+  max-width: 70vh;
+  max-height: 80vh;
   display: grid;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 80vh;
   margin-top: 5%;
   margin-left: 33%;
   padding: 2vh;
