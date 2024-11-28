@@ -1,11 +1,14 @@
 <div class="welcome-container">
-  <img src="/sinuca-app/img/Mestres da Sinuca.png" alt="Logo do Grupo de Sinuca" class="logo">
+  <img class="logo" src="assets/images/Mestres-da-Sinuca.png" alt="">
   <h1>Bem-vindo Mestre da sinuca!</h1>
   <!-- <p>Faça login para acompanhar o ranking e os jogos.</p> -->
 
-  <app-botao route="/login">Login</app-botao>
-  <app-botao route="/home">Continuar como convidado</app-botao>
+  <div class="botoes">
+    <app-botao route="/login">Login</app-botao>
+    <app-botao route="/home">Continuar como convidado</app-botao>
+  </div>
 
   <p>Ainda não é membro?</p>
-  <app-botao>Cadastre-se Aqui</app-botao>
+  <a href="/form-cadastro"><strong>Cadastre-se</strong></a>
+  <!-- <app-botao>Cadastre-se Aqui</app-botao> -->
 </div>

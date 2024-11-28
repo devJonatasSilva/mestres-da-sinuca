@@ -1,3 +1,51 @@
 .welcome-container {
-  margin-top: 50%;
+  max-width: 60vh;
+  max-height: 60vh;
+  display: grid;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin-top: 5%;
+  margin-left: 33%;
+  padding: 2vh;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.8);
 }
+
+.welcome-container .logo {
+  width: 30vh;
+  justify-self: center;
+}
+
+.welcome-container .botoes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.welcome-container form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.welcome-container form input {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  /* margin-right: 10px; */
+}
+
+.welcome-container .green-button {
+  margin-top: 30px;
+}
+
+.welcome-container .label-cadastro {
+  margin-top: 10px;
+}
+
+
