@@ -1,43 +1,51 @@
-/* Navbar Container */
+/* Navbar */
 .navbar {
-  background-color: #343a40;
-}
-
-.navbar-brand {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  background-image: url(/assets/images/tecido-de-camurca-mate-azul-claro-textura-de-veludo-de-fundo-de-feltro_113767-562.jpg);
+  padding: 10px 20px;
+  font-weight: 700;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
+.navbar .logo {
+  margin-right: 5%;
+  align-self: center;
 }
 
-/* Menu Items */
+.navbar .logo img {
+  width: 50px;
+  height: 50px;
+}
+
 .navbar-nav .nav-link {
   color: #fff;
   transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffc107;
+  color: #A9A9A9;
 }
 
-/* Active Link */
 .navbar-nav .nav-link.active {
   font-weight: bold;
-  color: #ffc107;
+  color: #A9A9A9;
 }
 
-/* Botão Login */
-.btn-login {
-  border-color: #ffc107;
-  color: #ffc107;
-  transition: background-color 0.3s ease, color 0.3s ease;
+/* Ajustes do Menu Hamburguer em Telas Pequenas */
+.navbar-toggler {
+  border-color: #A9A9A9;
 }
 
-.btn-login:hover {
-  background-color: #ffc107;
-  color: #343a40;
+.navbar-nav {
+  margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: right;
+  }
+  .navbar-toggler-icon {
+    background-color: #A9A9A9; /* Cor do ícone de hambúrguer */
+  }
 }
