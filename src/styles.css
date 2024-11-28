@@ -1,8 +1,10 @@
 /* Variáveis globais */
 :root {
+  --cor-de-fundo-base: linear-gradient(45deg, #006400, #008000, #228B22, #32CD32);
+
   --primary-color: #007bff;
   --secondary-color: #6c757d;
-  --background-color: #f5f5f5;
+  /* --background-color: #f5f5f5; */
   --text-color: #333;
 
   /*Espaçamentos */
@@ -29,20 +31,29 @@
 }
 
 /* Define altura e largura completas */
-html, body {
+html, body, app-root {
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif; /* Fonte padrão */
-  background-color: var(--background-color);
+  /* background-color: var(--cor-de-fundo-base); */
   color: var(--text-color);
 }
 
 /* Corpo centralizado */
-body {
+body, app-root {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   min-height: 100vh; /* Garante altura total da tela */
+  min-width: 100vh; /* Garante largura total da tela */
+  background-image: url(assets/images/billiard.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+app-root {
+  justify-self: center;
 }
 
 /* Estilo global para links */
