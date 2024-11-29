@@ -1,0 +1,30 @@
+<div class="ranking-container">
+  <h1>Ranking Mensal</h1>
+  <table class="ranking-table">
+    <thead>
+      <tr>
+        <th>Posição</th>
+        <th>Membro</th>
+        <th>Vitórias</th>
+        <th>Derrotas</th>
+        <th>MVPs</th>
+        <th>Maior Série Invicta</th>
+        <th>Pontos Totais</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let jogador of jogadores; let i = index">
+        <td>{{ i + 1 }}º</td>
+        <td class="membro">
+          <img [src]="jogador.imagemPerfil" alt="Foto de {{ jogador.nome }}" class="profile-pic" />
+          <span class="nome">{{ jogador.nome }}</span>
+        </td>
+        <td>{{ jogador.vitorias }}</td>
+        <td>{{ jogador.derrotas }}</td>
+        <td>{{ jogador.mvps }}</td>
+        <td>{{ jogador.serieInvicta }}</td>
+        <td>{{ jogador.pontos }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
