@@ -1,5 +1,5 @@
 .ranking-container {
-
+    max-width: 100%;
     min-height: 95vh;
     display: grid;
     overflow: hidden;
@@ -7,7 +7,7 @@
     align-items: center;
     padding: 2vh;
     text-align: center;
-    background-color: rgba(245, 245, 245, 0.8);
+    background: var(--cor-de-fundo-branco-semi-transparente)
 
   /* margin: 20px auto;
   padding: 20px;

@@ -1,6 +1,7 @@
 /* Variáveis globais */
 :root {
   --cor-de-fundo-base: linear-gradient(45deg, #006400, #008000, #228B22, #32CD32);
+  --cor-de-fundo-branco-semi-transparente: rgba(245, 245, 245, 0.8);
 
   --primary-color: #007bff;
   --secondary-color: #6c757d;
@@ -28,6 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -39,21 +41,13 @@ body {
 
 /* Define altura e largura completas */
 html, body, app-root {
+  display: flex;
   height: 100%;
   width: 100%;
+  min-height: 100%; /* Garante altura total da tela */
+  min-width: 100%; /* Garante largura total da tela */
   font-family: Arial, sans-serif; /* Fonte padrão */
-  /* background-color: var(--cor-de-fundo-base); */
   color: var(--text-color);
-}
-
-/* Corpo centralizado */
-body, app-root {
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  min-height: 100vh; /* Garante altura total da tela */
-  min-width: 100vh; /* Garante largura total da tela */
-
 }
 
 app-root {
