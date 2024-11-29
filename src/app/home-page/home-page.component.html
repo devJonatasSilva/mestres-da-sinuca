@@ -1,114 +1,48 @@
 <div class="home-container">
-
   <div class="container">
     <div class="header">
-        <h1>Melhores do mês</h1>
+      <h1>Melhores do mês</h1>
     </div>
     <div class="cards">
-        <div class="card">
-            <h2>Jogador 2</h2>
-            <p>Descrição do Jogador 2</p>
-        </div>
-        <div class="card first">
-          <h2>Jogador 1</h2>
-          <p>Descrição do Jogador 1</p>
-      </div>
-        <div class="card">
-            <h2>Jogador 3</h2>
-            <p>Descrição do Jogador 3</p>
-        </div>
+      <app-card
+        *ngFor="let player of players; let i = index"
+        [player]="player"
+        [isFirst]="i === 0"
+        [isSecond]="i === 1"
+        [isThird]="i === 2"
+        [isMVP]="player.isMVP"
+      ></app-card>
     </div>
-    <div class="table-container">
-        <h2>Resultado da semana</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Posição</th>
-                    <th>Nome</th>
-                    <th>Time</th>
-                    <th>Pontuação</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>4</td>
-                    <td>Jogador 4</td>
-                    <td>Time A</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Jogador 5</td>
-                    <td>Time B</td>
-                    <td>85</td>
-                </tr>
-                <!-- Adicione mais jogadores conforme necessário -->
-            </tbody>
-        </table>
-    </div>
-</div>
+  </div>
 
-  <!-- <h1>Home</h1>
-
-  <p>a tela home não está responsiva, quando é redimensionada ela não se ajusta ao tamanho da timela e
-    isso deve ser ajustado na proxima seção de desenvolvimento.
-  </p>
-
-  <ul>
-    <li><strong>Desenvolver a Tela Principal (Home)</strong>
-      <ul>
-        <li>Criar o componente <code>home</code>.</li>
-        <li>Definir a estrutura do HTML para exibir o ranking e últimos resultados.</li>
-        <li>Estilizar a tela com CSS para uma aparência limpa e agradável.</li>
-        <li>Adicionar lógica no TypeScript para puxar dados de um serviço (ou mock de dados).</li>
-        <li>Testar a visualização em diferentes tamanhos de tela.</li>
-      </ul>
-    </li>
-
-    <li><strong>Configurar o Roteamento</strong>
-      <ul>
-        <li>Garantir que o componente <code>HomeComponent</code> está corretamente configurado no arquivo de roteamento <code>app-routing.module.ts</code>.</li>
-        <li>Testar a navegação entre as páginas (se necessário, adicione outras rotas, como para o histórico e ranking completo).</li>
-      </ul>
-    </li>
-
-    <li><strong>Conectar a Tela com o Backend (opcional, se não for mock de dados)</strong>
-      <ul>
-        <li>Criar serviços para buscar dados do backend (ex: ranking, histórico de partidas).</li>
-        <li>Integrar o serviço ao componente <code>HomeComponent</code>.</li>
-        <li>Testar as chamadas HTTP e garantir que os dados estão sendo exibidos corretamente na tela.</li>
-      </ul>
-    </li>
-
-    <li><strong>Melhorar a Estilização e Responsividade</strong>
-      <ul>
-        <li>Verificar se todos os elementos da tela estão responsivos em diferentes tamanhos de dispositivos (mobile, tablet, desktop).</li>
-        <li>Aplicar media queries no CSS ou usar classes do Bootstrap para garantir boa usabilidade em dispositivos móveis.</li>
-      </ul>
-    </li>
-
-    <li><strong>Adicionar Funcionalidades Interativas</strong>
-      <ul>
-        <li>Adicionar botões de ação para registrar partidas, ver o ranking completo e acessar o histórico de jogos.</li>
-        <li>Considerar o uso de modais ou notificações para melhorar a interação do usuário.</li>
-      </ul>
-    </li>
-
-    <li><strong>Testar a Tela Principal</strong>
-      <ul>
-        <li>Realizar testes manuais para verificar se todos os elementos da tela estão funcionando conforme esperado.</li>
-        <li>Testar a navegação entre os componentes e certificar-se de que as rotas estão funcionando corretamente.</li>
-      </ul>
-    </li>
-
-    <li><strong>Refinar e Documentar</strong>
-      <ul>
-        <li>Refinar a estilização, corrigir pequenos problemas de layout e melhorar a UX.</li>
-        <li>Adicionar comentários no código para garantir que ele seja facilmente compreendido no futuro.</li>
-      </ul>
-    </li>
-  </ul> -->
-
+  <div class="table-container">
+    <h2>Resultado da semana</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Nome</th>
+                <th>Time</th>
+                <th>Pontuação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4</td>
+                <td>Jogador 4</td>
+                <td>Time A</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Jogador 5</td>
+                <td>Time B</td>
+                <td>85</td>
+            </tr>
+            <!-- Adicione mais jogadores conforme necessário -->
+        </tbody>
+    </table>
+  </div>
 
 </div>
 

@@ -1,1 +1,18 @@
-<p>card works!</p>
+<div class="card" [ngClass]="{ 'first': isFirst, 'second': isSecond, 'third': isThird, 'mvp': isMVP }">
+  <div class="card-header">
+    <img [src]="player.avatarUrl" alt="Avatar" class="avatar">
+    <div *ngIf="isMVP" class="mvp-icon">MVP</div>
+  </div>
+  <div class="card-body">
+    <h2 class="player-name">{{ player.name }}</h2>
+    <div class="performance">
+      <p><strong>Vitórias:</strong> {{ player.victories }}</p>
+      <p><strong>Derrotas:</strong> {{ player.losses }}</p>
+      <div class="medal">
+        <img *ngIf="isFirst" src="assets/gold-medal.png" alt="Gold Medal" class="medal-icon">
+        <img *ngIf="isSecond" src="assets/silver-medal.png" alt="Silver Medal" class="medal-icon">
+        <img *ngIf="isThird" src="assets/bronze-medal.png" alt="Bronze Medal" class="medal-icon">
+      </div>
+    </div>
+  </div>
+</div>

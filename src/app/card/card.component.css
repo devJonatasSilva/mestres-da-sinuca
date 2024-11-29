@@ -1,0 +1,77 @@
+.card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  position: relative;
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.mvp-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: gold;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.player-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.performance {
+  font-size: 1rem;
+  color: #555;
+}
+
+.medal {
+  margin-top: 15px;
+}
+
+.medal-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.first {
+  border: 2px solid #ffd700;
+}
+
+.second {
+  border: 2px solid #c0c0c0;
+}
+
+.third {
+  border: 2px solid #cd7f32;
+}
