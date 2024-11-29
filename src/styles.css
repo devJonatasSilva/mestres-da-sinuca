@@ -30,6 +30,13 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(assets/images/billiard.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Define altura e largura completas */
 html, body, app-root {
   height: 100%;
@@ -46,10 +53,7 @@ body, app-root {
   /* align-items: center; */
   min-height: 100vh; /* Garante altura total da tela */
   min-width: 100vh; /* Garante largura total da tela */
-  background-image: url(assets/images/billiard.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 
 app-root {
