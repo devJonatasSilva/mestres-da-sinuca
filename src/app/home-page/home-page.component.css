@@ -1,5 +1,5 @@
 .home-container {
-  min-height: 100vh;
+  min-height: 95vh;
   display: grid;
   overflow: hidden;
   justify-content: center;
@@ -18,7 +18,8 @@
 /* css provisorio */
 
 .container {
-  max-width: 1200px;
+  max-width: 100vh;
+  max-height: 100vh;
   margin: 0 auto;
   padding: 20px;
 }
