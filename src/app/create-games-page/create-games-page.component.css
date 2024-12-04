@@ -1,0 +1,30 @@
+.games-carousel {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  /* Exibe 1 card por vez */
+  swiper {
+    --swiper-slides-per-view: 1;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+  /* Exibe 3 cards por vez */
+  swiper {
+    --swiper-slides-per-view: 3;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Exibe 5 cards por vez */
+  swiper {
+    --swiper-slides-per-view: 5;
+  }
+}

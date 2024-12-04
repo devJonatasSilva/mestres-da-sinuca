@@ -1,0 +1,17 @@
+<div class="games-carousel">
+  <swiper
+    [slidesPerView]="getSlidesPerView()"
+    [spaceBetween]="20"
+    class="carousel-container"
+  >
+    <ng-container *ngFor="let option of gameOptions">
+      <ng-template swiperSlide>
+        <app-game-option-card
+          [title]="option.title"
+          [description]="option.description"
+          [route]="option.route"
+        ></app-game-option-card>
+      </ng-template>
+    </ng-container>
+  </swiper>
+</div>
